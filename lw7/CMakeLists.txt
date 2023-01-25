@@ -1,0 +1,12 @@
+add_executable(
+        os_lexer
+        main.cpp
+        src/Args.h
+        src/Common.h
+        src/Lexer.h
+        src/Lexeme/LexemeUnit.h
+        src/Lexeme/Lexeme.h
+        src/Token/Token.h
+        src/Token/TokenFunction.h
+        src/Token/TokenType.h
+)

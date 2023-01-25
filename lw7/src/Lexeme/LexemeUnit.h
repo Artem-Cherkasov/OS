@@ -1,0 +1,46 @@
+#pragma once
+#include "../Common.h"
+#include "../Token/TokenType.h"
+#include <random>
+#include <set>
+#include <string>
+#include <unordered_map>
+
+std::unordered_map<std::string, TokenType> LEXEME_UNIT = {
+        {"const", TokenType::CONST},
+        {"let", TokenType::LET},
+        {"var", TokenType::VAR},
+        {"if", TokenType::IF},
+        {"else", TokenType::ELSE},
+        {"while", TokenType::WHILE},
+        {"do", TokenType::DO},
+        {"for", TokenType::FOR},
+        {"true", TokenType::TRUE},
+        {"false", TokenType::FALSE},
+        {"import", TokenType::IMPORT},
+        {"export", TokenType::EXPORT},
+        {"==", TokenType::EQUALITY},
+        {"===", TokenType::STRICT_EQUALITY},
+        {"!=", TokenType::NOT_EQUALITY},
+        {"!==", TokenType::NOT_STRICT_EQUALITY},
+        {">=", TokenType::GREATER_EQUAL},
+        {"<=", TokenType::LESS_EQUAL},
+        {">", TokenType::GREATER},
+        {"<", TokenType::LESS},
+        {"=", TokenType::ASSIGNMENT},
+        {",", TokenType::COMMA},
+        {";", TokenType::SEMICOLON},
+        {":", TokenType::COLON},
+        {"{", TokenType::CURLY_OPENING},
+        {"}", TokenType::CURLY_CLOSING},
+        {"(", TokenType::ROUND_OPENING},
+        {")", TokenType::ROUND_CLOSING},
+        {"+", TokenType::PLUS},
+        {"-", TokenType::MINUS},
+        {"*", TokenType::MULTIPLY},
+        {"/", TokenType::DIVIDE},
+        {"!", TokenType::NOT},
+        {"&&", TokenType::AND},
+        {"||", TokenType::OR},
+        {"//", TokenType::COMMENT},
+};
